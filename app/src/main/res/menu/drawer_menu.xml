@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:title="DASH BOARD"
+            android:icon="@drawable/ic_baseline_dashboard_24"/>
+        <item
+            android:id="@+id/business"
+            android:title="BUSINESS"
+            android:icon="@drawable/ic_baseline_business_center_24"/>
+        <item
+            android:id="@+id/localadmin"
+            android:title="LOCAL ADMIN"
+            android:icon="@drawable/ic_baseline_admin_panel_settings_24"/>
+        <item
+            android:id="@+id/deliveryboy"
+            android:title="DELIVERY BOYS"
+            android:icon="@drawable/ic_baseline_local_shipping_24"/>
+
+        <item
+            android:id="@+id/restaurants"
+            android:title="RESTAURANTS"
+            android:icon="@drawable/ic_baseline_restaurant_24"/>
+        <item
+            android:id="@+id/foodcatagory"
+            android:title="FOOD CATAGORY"
+            android:icon="@drawable/ic_baseline_food_bank_24"/>
+        <item
+            android:id="@+id/logout"
+            android:title="LOG OUT"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+
+    </group>
+
+</menu>

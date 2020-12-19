@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="#E8E2E2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/addnewlocaladmin" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Name"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Username"
+                    app:startIconDrawable="@drawable/baseline_account_box_black_24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_name_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Mobile Number"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Username"
+                    app:startIconDrawable="@drawable/baseline_call_black_24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_phone_editext"
+                        android:layout_width="match_parent"
+                        android:maxLength="10"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Email"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Username"
+                    app:startIconDrawable="@drawable/baseline_mail_black_24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_email_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Aadhar No"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Username"
+                    app:startIconDrawable="@drawable/aadhar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_aadharNo_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="16"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="GST No"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Username"
+                    app:startIconDrawable="@drawable/gst">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_gstNo_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Pancard No"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Pancard No"
+                    app:startIconDrawable="@drawable/pan">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_pancardNo_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Address"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_address_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:inputType="textMultiLine"
+                        android:lines="5" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Password"
+                    app:endIconMode="password_toggle"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Validity Date"
+                    app:startIconDrawable="@drawable/password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_password_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Confirm Password"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Validity Date"
+                    app:startIconDrawable="@drawable/password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_conpassword_editext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Distance Allocation"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Validity Date"
+                    app:startIconDrawable="@drawable/km">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_businessKM_editext"
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filledTextField10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ounded_edit_text"
+                    android:elevation="2dp"
+                    android:enabled="true"
+                    android:hint="Validity"
+                    app:hintTextColor="@color/colorPrimary"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:startIconContentDescription="Validity Date"
+                    app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_local_admin_validaty_editext"
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Area"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/add_local_admin_businessArea_editext"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Blocked/Unblocked"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/add_local_admin_isBlocked_editext"
+                    style="@style/Widget.AppCompat.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:dropDownWidth="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City/State - "
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:id="@+id/actAll"/>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/add_local_admin_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/buttonround"
+                    android:text="ADD"
+                    android:textColor="@color/colorWhite"/>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
